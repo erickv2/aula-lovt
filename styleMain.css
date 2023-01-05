@@ -1,0 +1,190 @@
+@import url('https://fonts.cdnfonts.com/css/ropa-sans-2');
+
+main {
+    display: grid;
+    padding: 50px 100px 200px 100px;
+    justify-content: center;
+    grid-gap: 5rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "imagem1 imagem1"
+        "imagem2 imagem3"
+        "yourStyle yourStyle"
+        "industrial industrial"
+        "modern modern"
+        "classic classic"
+}
+
+
+#imagem1 {  
+    grid-area: imagem1;
+    position: relative;
+}
+
+#imagem1 img {
+    width: 100%;
+}
+
+#setaDireita {
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    width: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: invert(1);
+    border-radius: 50%;
+}
+
+#setaDireita img {
+    width: 75px;
+    box-sizing: content-box;
+}
+
+#setaEsquerda {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: invert(1);
+    border-radius: 50px;
+}
+
+#imagem2 {
+    grid-area: imagem2;
+    word-wrap: break-word;
+    background-color: #EEEEEE;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+#imagem2 img {
+    width: 100%;
+}
+
+#imagem2 p {
+    padding: 10px 20px 0px;
+}
+
+#boxImagem2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding: 20px 20px 0px;
+}
+
+#boxImagem2 div {
+    background-color: #51D275;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+}
+
+#imagem3 {
+    grid-area: imagem3;
+    word-wrap: break-word;
+    background-color: #EEEEEE;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+#imagem3 img {
+    width: 100%;
+}
+
+#imagem3 p {
+    padding: 10px 20px 0px;
+}
+
+#boxImagem3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0px; 
+}
+
+#boxImagem3 div {
+    background-color: #DC9730;
+    width: 100px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+}
+
+.preco {
+    font-size: 30px;
+}
+
+#yourStyle {
+    grid-area: yourStyle;
+    text-align: center;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+#yourStyle p {
+    font-size: 50px;
+}
+
+#industrial {
+    grid-area: industrial;
+    width: 100%;
+    position: relative;
+    color: #fff;
+    font-size: 50px;
+}
+
+#industrial img {
+    width: 100%;
+    opacity: 0.75;
+}
+
+#industrial div {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 41.5%;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+#modern {
+    grid-area: modern;
+    width: 100%;
+    position: relative;
+    color: #fff;
+    font-size: 50px;
+}
+
+#modern img {
+    width: 100%;
+    opacity: 0.75;
+}
+
+#modern div {
+    position: absolute;
+    text-align: center;
+    top: 36%;
+    left: 44%;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+#classic {
+    grid-area: classic;
+    width: 100%;
+    position: relative;
+    color: #fff;
+    font-size: 50px;
+}
+
+#classic img {
+    width: 100%;
+    opacity: 0.75;
+}
+
+#classic div {
+    position: absolute;
+    text-align: center;
+    top: 36%;
+    left: 45%;
+    font-family: 'Ropa Sans', sans-serif;
+}
